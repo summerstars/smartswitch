@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="globalActTheme" parent="@*android:style/Theme.Light.NoTitleBar" />
+    <style name="myDialog" parent="@*android:style/Theme.Dialog">
+        <item name="android:windowBackground">@*android:color/transparent</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="myTimeDialogTheme" parent="@*android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/servers" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/maintab_toolbar_bg" android:paddingTop="8.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="9.0">
+        <ImageButton android:id="@id/back" android:background="@*android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/reply_btn_normal" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="17.0dip" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="FAQ" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <LinearLayout android:background="#ffe7e3de" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <ProgressBar android:id="@id/progress_bar" android:layout_width="fill_parent" android:layout_height="5.0dip" style="?android:attr/progressBarStyleHorizontal" />
+        <WebView android:id="@id/wv" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+</LinearLayout>

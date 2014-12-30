@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/maintab_toolbar_bg" android:paddingTop="8.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="9.0">
+        <ImageButton android:id="@id/back" android:background="@*android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/reply_btn_normal" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <com.broadlink.switchproduct.view.MyScrollLayout android:id="@id/ScrollLayout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <FrameLayout android:background="@drawable/guide_b_01" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <FrameLayout android:background="@drawable/guide_b_02" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <FrameLayout android:background="@drawable/guide_b_03" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <Button android:textColor="#ffffffff" android:id="@id/start_cfg" android:background="@drawable/button_style_green_bg" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginBottom="90.0dip" android:text="@string/start_config" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+                </RelativeLayout>
+            </FrameLayout>
+        </com.broadlink.switchproduct.view.MyScrollLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/llayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="24.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+            <ImageView android:layout_gravity="center_vertical" android:padding="15.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/guide_round" />
+            <ImageView android:layout_gravity="center_vertical" android:padding="15.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/guide_round" />
+            <ImageView android:layout_gravity="center_vertical" android:padding="15.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/guide_round" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

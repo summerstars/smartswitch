@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/alpha_50" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/pop_layout" android:background="@drawable/btn_style_alert_dialog_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <Button android:textColor="#ffffffff" android:id="@id/by_album" android:background="@drawable/button_style_green_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/from_album" />
+        <Button android:textColor="#ffffffff" android:id="@id/by_camera" android:background="@drawable/button_style_green_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="@string/from_camera" />
+        <Button android:id="@id/close" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/Close" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/cfg" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/maintab_toolbar_bg" android:paddingTop="8.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="9.0">
+        <ImageButton android:id="@id/help" android:background="@android:color/transparent" android:paddingLeft="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/voip_attention_icon" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="17.0dip" android:textColor="#ffffffff" android:id="@id/title_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/peizhi" android:layout_centerInParent="true" />
+        <ImageButton android:id="@id/refresh" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/refresh_btn_normal" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <TextView android:textColor="#ff000000" android:gravity="center" android:id="@id/errorWifi" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/errorConnWifi" />
+        <LinearLayout android:orientation="vertical" android:id="@id/body_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:id="@id/ssid_lay" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textStyle="bold" android:textColor="#ff000000" android:id="@id/ssid_title" android:layout_width="50.0dip" android:layout_height="wrap_content" android:text="WIFI:" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <EditText android:textColor="#ff000000" android:id="@id/ssid_value" android:layout_width="230.0dip" android:layout_height="40.0dip" android:singleLine="true" android:layout_toRightOf="@id/ssid_title" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/pass_lay" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <TextView android:textStyle="bold" android:textColor="#ff000000" android:id="@id/pass_t" android:layout_width="50.0dip" android:layout_height="wrap_content" android:text="@string/pwd" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <EditText android:textColor="#ff000000" android:id="@id/pass" android:layout_width="230.0dip" android:layout_height="40.0dip" android:layout_toRightOf="@id/pass_t" android:layout_centerVertical="true" android:inputType="textPassword" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/pass_show_lay" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <CheckBox android:id="@id/pass_show" android:layout_width="50.0dip" android:layout_height="wrap_content" android:checked="false" android:layout_alignParentLeft="true" />
+                <TextView android:textColor="#ff000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/show_pass" android:layout_toRightOf="@id/pass_show" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <Button android:id="@id/submit" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/start_config" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
